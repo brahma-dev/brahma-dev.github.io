@@ -104,12 +104,12 @@
     var t = 30;
     var n = 350;
     var r = 350;
-    var i = "//brahma-dev.github.io/dns/harlem-shake.mp3";
+    var i = "https://www.brahma.world/dns/harlem-shake.mp3";
     var s = "mw-harlem_shake_me";
     var o = "im_first";
     var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
     var a = "mw-strobe_light";
-    var f = "//brahma-dev.github.io/dns/hs.min.css?1";
+    var f = "https://www.brahma.world/dns/hs.min.css?1";
     var l = "mw_added_css";
     var b = g();
     var w = y();
