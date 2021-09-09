@@ -4,4 +4,6 @@
 
 [class*="NavBar-plexLogo-"] {
   width:180px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
