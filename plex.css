@@ -7,3 +7,7 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+[class*="NavBar-plexLogo-"] svg {
+  opacity:0;
+}
