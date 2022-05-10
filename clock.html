@@ -1,0 +1,18 @@
+<!doctype html><html><head></head><body><div id="time">
+
+</div><script type="text/javascript">(function () {
+
+  const el = document.getElementById("time");
+  const rmsperday = (24 * 60 * 60000);
+  const newsecratio = (32 * 64 * 64) / (24 * 60 * 60);
+  setInterval(() => {
+    let t = new Date().getTime();
+    let d = t % rmsperday;
+    d *= newsecratio;
+    let hrs = Math.floor(d / (64 * 64000));
+    d = d % (64 * 64000);
+    let min = Math.floor(d / (64000));
+    d = d % (64000);
+    el.innerText = String(hrs).padStart(2, "0") + ":" + String(min).padStart(2, "0") + ":" + String(Math.floor(d / 1000)).padStart(2, "0");
+  }, (24 * 60 * 60000) / (5 * 32 * 64 * 64))
+})();</script></body><html>
