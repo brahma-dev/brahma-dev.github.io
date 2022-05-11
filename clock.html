@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 <html>
-<body>
+<body style="background-color:#333">
 
 <canvas id="canvas" width="400" height="400"
-style="background-color:#333">
+style="background-color:#333; display:block; margin:auto">
 </canvas>
 
 <script>
@@ -21,6 +21,7 @@ setInterval(drawClock,  (24 * 60 * 60000) / (32 * 32 * 64 * 64));
 function drawClock() {
   drawFace(ctx, radius);
   drawNumbers(ctx, radius);
+  drawNumbers2(ctx, radius);
   drawTime(ctx, radius);
 }
 
@@ -32,7 +33,7 @@ function drawFace(ctx, radius) {
   ctx.fill();
   grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
   grad.addColorStop(0, '#333');
-  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(0.5, '#555');
   grad.addColorStop(1, '#333');
   ctx.strokeStyle = grad;
   ctx.lineWidth = radius*0.1;
@@ -44,6 +45,27 @@ function drawFace(ctx, radius) {
 }
 
 function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.09 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  ctx.fillStyle = '#AAA';
+  for(num = 1; num < 65; num+=2){
+    ang = num * Math.PI / 32;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.86);
+    ctx.rotate(-ang);
+    ctx.fillText("·", 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.86);
+    ctx.rotate(-ang);
+  }
+  ctx.fillStyle = '#333';
+}
+
+
+function drawNumbers2(ctx, radius) {
   var ang;
   var num;
   ctx.font = radius*0.10 + "px arial";
