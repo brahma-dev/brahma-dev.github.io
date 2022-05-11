@@ -55,9 +55,9 @@ function drawNumbers(ctx, radius) {
     ang = num * Math.PI / 32;
     ctx.rotate(ang);
     ctx.translate(0, -radius*0.86);
-    ctx.rotate(-ang);
-    ctx.fillText("·", 0, 0);
-    ctx.rotate(ang);
+    //ctx.rotate(-ang);
+    ctx.fillText("ˈ", 0, 0);
+    //ctx.rotate(ang);
     ctx.translate(0, radius*0.86);
     ctx.rotate(-ang);
   }
