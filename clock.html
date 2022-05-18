@@ -3,11 +3,23 @@
 <html>
 <body style="background-color:#FFF">
 
+<div>
+Day starts at
+<input type="time" id="appt" name="appt" min="00:00" max="23:59" required>
+</div>
 <canvas id="canvas" width="960" height="960"
 style="background-color:#FFF; display:block; margin:auto;transform: scale(0.5);transform-origin: top center;">
 </canvas>
 
 <script>
+let customoffset = window.localStorage.offset || 0;
+var tminput = document.getElementById("appt");
+tminput.valueAsNumber = customoffset;
+tminput.addEventListener("input",function() {
+customoffset = tminput.valueAsNumber;
+console.log(tminput.valueAsNumber);
+ window.localStorage.setItem("offset",tminput.valueAsNumber);
+}, false);
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var radius = canvas.height / 2;
@@ -120,7 +132,7 @@ function ding() {
 
 
 function drawTime(ctx, radius){
-    var now = (new Date().getTime())+localoffset;
+    var now = (new Date().getTime())+localoffset-(customoffset);;
     let d = now % rmsperday;
     d *= newsecratio;
     var hour = Math.floor(d / (64 * 64000));
