@@ -11,3 +11,7 @@
 [class*="NavBar-logoContainer-"] svg {
   opacity:0;
 }
+
+[class*="NavBar-logoContainer-"] a {
+  width: 100%;
+}
