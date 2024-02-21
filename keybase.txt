@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/brahma_dev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.brahma.world
+  * I am brahma_dev (https://keybase.io/brahma_dev) on keybase.
+  * I have a public key ASDuDFQBf00i6Vc5blOOlTdbZ0yVNE18tmkLctDfTjY5QQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120592074846f927f1079d5dfc30e0a859d4a8f6140251c44fefd0a6fef40b1f0150a",
+      "host": "keybase.io",
+      "kid": "0120ee0c54017f4d22e957396e538e95375b674c95344d7cb6690b72d0df4e3639410a",
+      "uid": "eca244d8216772efe3a3abd1cf5a1719",
+      "username": "brahma_dev"
+    },
+    "merkle_root": {
+      "ctime": 1708551210,
+      "hash": "8814f9a80450f4e2c81914bf18991a0966b27a8228e4c64f396b215bb3b25fb890f0030c74cc37ee7549e04a7c8b9dd2c85e2f02a395b0c101a5d2e1f3f8867f",
+      "hash_meta": "b643734b4d514e57fccdd8f4af841b99dab92b51232e7bcd3f2beb1f7a161d98",
+      "seqno": 25481708
+    },
+    "service": {
+      "entropy": "T9W8Ap7ze/Ws/ArB5tJG2pmu",
+      "hostname": "www.brahma.world",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.4"
+  },
+  "ctime": 1708551285,
+  "expire_in": 504576000,
+  "prev": "01e4f2d184a8a07a1c27cff268addf9e9362f6235f9c39a3215ba9907f2e795f",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7gxUAX9NIulXOW5TjpU3W2dMlTRNfLZpC3LQ3042OUEKp3BheWxvYWTESpcCEcQgAeTy0YSooHocJ8/yaK3fnpNi9iNfnDmjIVupkH8ueV/EIFRHCcxQj/QNUofSeTC+lcfyxnEZ/HRYZ1ssaLjWAi0aAgHCo3NpZ8RAlHjjNVjxzhXMX3SMQ5KIAhInv3BjU01571hZki/GDVMVloUb/1K+ZPgeUEhfT2PDUGwPRqrUQzK9l+2qjsneDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGXbjkJmagKcf/O6kfu+krpucMAW+Y1CWAMIIePQRZUco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brahma_dev
+
+==================================================================
